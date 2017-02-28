@@ -1,0 +1,20 @@
+{
+  "name": "lang-learn",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "pszonkadonk <mjp529@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

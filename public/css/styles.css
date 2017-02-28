@@ -1,0 +1,44 @@
+.header-section {
+    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url("../img/field.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.welcome-message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 10%;
+}
+
+h2 {
+    font-size: 45px;
+}
+
+.login {
+    position: relative;
+    bottom: 80px;
+    left: 65%;
+    width: 40%;
+
+}
+
+
+.about {
+    position: relative;
+    right: 40%;
+}
+
+.input-lg {
+    margin-bottom: 20px;
+}
+
+/*NEXT SECTION */
+
+.nextSection {
+    background-color: #f8f8f8;
+    padding: 50px;
+
+}
