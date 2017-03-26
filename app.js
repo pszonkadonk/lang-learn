@@ -1,9 +1,6 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const bodyparser = require('body-parser');
-
-
 
 //configure view
 app.set('views', path.join(__dirname, 'views'));
@@ -15,15 +12,10 @@ app.use(express.static(__dirname + '/views'));
 app.use(express.static(path.join(__dirname, 'bower_components')));
 
 
-
-
 app.get('/', (req, res) =>{
     res.render('index.html')
 
 });
-
-
-
 
 app.listen(3000, () => {   
    console.log("Listening on port 3000...") 
