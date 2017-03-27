@@ -1,6 +1,6 @@
 const constructorMethod = (app) => {
     app.get("/", (req, res) => {
-        res.render('index.html');
+        res.render('layouts/index');
     });
 
     app.use("*", (req, res) => {
