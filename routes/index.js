@@ -112,6 +112,8 @@ const constructorMethod = (app) => {
     });
 /*
     app.get("/:baseLang/:targetLang/:word", (req, res) => {
+        //Note to Josh:
+        //pass in base and target to make the link to the next one
         let bLang = undefined;
         let tLang = undefined;
         let baseLang = req.params.baseLang;
