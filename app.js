@@ -28,7 +28,7 @@ app.set('views', path.join(__dirname, 'views'));
 //middleware
 app.use(express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '/views'));
-app.use(express.static(path.join(__dirname, 'bower_components')));
+app.use(express.static(__dirname + '/bower_components'));
 
 //templating
 app.engine('handlebars', handlebarsInstance.engine);
