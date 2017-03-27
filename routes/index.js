@@ -110,7 +110,7 @@ const constructorMethod = (app) => {
     app.get("/", (req, res) => {
         res.render('layouts/index');
     });
-
+/*
     app.get("/:baseLang/:targetLang/:word", (req, res) => {
         let bLang = undefined;
         let tLang = undefined;
@@ -141,6 +141,38 @@ const constructorMethod = (app) => {
             res.sendStatus(500);
             console.error("Target or base language code not recognized");
         }
+    })
+    */
+    app.get("/learn/:word", (req, res) => {
+        let mainWord = req.params.word;
+
+        translate(mainWord, {to: 'es'}).then(apiRes => {
+            res.render('layouts/quizzer', {
+                lang1: 'english',
+                lang2: 'spanish',
+                mainWord: mainWord,
+                translatedWord: apiRes.text
+            });
+        }).catch(err => {
+            res.sendStatus(500);
+            console.error(err);
+        });
+    })
+
+    app.get("/:word", (req, res) => {
+        let mainWord = req.params.word;
+
+        translate(mainWord, {to: 'es'}).then(apiRes => {
+            res.render('layouts/quizzer', {
+                lang1: 'english',
+                lang2: 'spanish',
+                mainWord: mainWord,
+                translatedWord: apiRes.text
+            });
+        }).catch(err => {
+            res.sendStatus(500);
+            console.error(err);
+        });
     })
 
     app.use("*", (req, res) => {
