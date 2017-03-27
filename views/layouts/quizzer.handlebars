@@ -1,0 +1,26 @@
+<section id="flashcard-quizzer">
+  <div id="card">
+    <header>
+      {{firstUpper lang1}} <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> {{firstUpper lang2}}
+    </header>
+
+    <div id="main-word">{{firstUpper mainWord}}</div>
+
+    <div id="translated-word" class="hidden">{{firstUpper translatedWord}}</div>
+
+    <div id="controls" class="btn-group" role="group" aria-label="...">
+      {{! flip card }}
+      <button type="button" class="btn btn-default">
+        <span class="glyphicon glyphicon glyphicon-repeat" aria-hidden="true"></span>
+      </button>
+      {{! correct }}
+      <button type="button" class="btn btn-default hidden">
+        <span class="glyphicon glyphicon glyphicon-ok" aria-hidden="true"></span>
+      </button>
+      {{! incorrect }}
+      <button type="button" class="btn btn-default hidden">
+        <span class="glyphicon glyphicon-chevron-remove" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</section>

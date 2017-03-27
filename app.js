@@ -15,6 +15,9 @@ const handlebarsInstance = exphbs.create({
                 return new Handlebars.SafeString(JSON.stringify(obj, null, spacing));
 
             return new Handlebars.SafeString(JSON.stringify(obj));
+        },
+        firstUpper: (str) => {
+            return str.charAt(0).toUpperCase() + str.slice(1);
         }
     }
 });
