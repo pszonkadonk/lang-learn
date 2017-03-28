@@ -22,6 +22,8 @@ const handlebarsInstance = exphbs.create({
     }
 });
 
+
+
 //configure view
 app.set('views', path.join(__dirname, 'views'));
 
